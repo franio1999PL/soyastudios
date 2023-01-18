@@ -1,5 +1,6 @@
 import { isArray, isEmpty } from 'lodash'
 import Link from 'next/link'
+import { DEFAULT_IMG_URL } from '../../utils/constants/images'
 import Image from '../image'
 
 const Products = ({ products }) => {
@@ -30,7 +31,7 @@ const Products = ({ products }) => {
                     <div className='border rounded-md shadow-sm hover:shadow-md hover:border-gray-700/40 p-4 h-full flex flex-col justify-between gap-1'>
                       {/* eslint-disable-next-line jsx-a11y/alt-text */}
                       <Image
-                        sourceUrl={img?.src ?? ''}
+                        sourceUrl={img?.src ?? DEFAULT_IMG_URL}
                         altText={img?.alt ?? ''}
                         title={product?.name ?? ''}
                         width='380'
