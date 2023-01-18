@@ -41,7 +41,7 @@ const Products = ({ products }) => {
                       <div className='flex justify-center gap-2'>
                         {product?.sale_price ? (
                           <>
-                            {/* Po przecenie */}
+                            {/* Po przecenie xd */}
                             <p>{product?.price}zł</p>
                             {/* Przed przeceną */}
                             <p className='line-through text-gray-900/30'>
